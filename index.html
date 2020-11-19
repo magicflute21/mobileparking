@@ -3,13 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/tailwind.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="/public/tailwind.css">
+    <title>Mobile Parking Solution</title>
 </head>
 <body>
-        <h5 class="text-red-400">hi</h5>
-        <h6 class="text-red-400">hi</h6>
-        <h1>hi</h1>
-
+    <div class="page-wrapper flex flex-col justify-between h-screen w-screen overflow-auto">
+        <header class="z-20 relative">
+            <div class="bg-white h-16 flex justify-between items-center py-1.5 pr-5 pl-4 shadow-md">
+                <div class="w-36 h-auto">
+                    <img src="./public/img/Advectus-Logo500.png" alt="Advectus" class="w-full h-full object-cover">
+                </div>
+                <div class="h-11 w-11 rounded-full bg-gray-200 flex justify-center items-center">
+                    <p class="font-normal text-sm uppercase">md</p>
+                </div>
+            </div>
+        </header>
+        <main class="h-full w-full">
+            <div class="bg-cars-image bg-cover relative z-0 h-full overflow-auto">
+                <form action="" class="search flex flex-col align-center p-5 w-full absolute bottom-0">
+                    <input type="text" id="vin" name="vin" value="VIN" class="rounded mb-4 p-1.5 pl-2.5 text-base text-gray-500 font-normal leading-6 bg-white">
+                    <input type="button" id="search" name="search" value="Search" class="rounded py-1.5 px-4 bg-blue-500 text-base text-white font-medium leading-6">
+                </form>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
+
+
+
+            <!-- <div class="gray-overlay bg-gray-200 bg-opacity-25 w-full h-full p-5 flex flex-col justify-end"></div> -->
+
+            <!-- <img src="./public/img/carsbackground.png" alt="cars parking" class="absolute w-full h-full z-0">
+            <div class="page-wrapper p-5"></div> -->
+
+    
+
+    <!-- <main class="bg-gray-200 bg-opacity-50 z-10 h-screen w-full relative">
+        <div class="bg-cars-image bg-cover relative z-0-h-full w-full">
+        </div>    
+    </main> -->
+
+
+    <!-- <main class="bg-gray-200">
+        <div class="h-screen w-full bg-cars-image bg-cover relative z-0"> 
+            <div class="px-5 bg-red-200">          
+                <form class="search flex flex-col align-center h-40 absolute bottom-0 mx-5 w-full">
+                    <input type="text" id="vin" name="vin" value="VIN" class="rounded h-10 mb-4 p-1.5 pl-2.5 text-gray-500 font-normal">
+                    <input type="button" id="search" name="search" value="Search" class="rounded py-1.5 px-4 bg-blue-500 text-white font-medium">
+                </form>
+            </div> 
+        </div>
+    </main> -->
+
