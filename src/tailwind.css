@@ -5,3 +5,45 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+@layer components {
+    .btn {
+        @apply text-white w-full py-1.5 px-4 rounded text-base font-medium leading-6 shadow-sm;
+    }
+    .text-sm-uppercase {
+        @apply text-gray-400 text-xs font-sans font-bold leading-6 uppercase;
+    }
+    .text-sm-dark {
+        @apply text-gray-600 text-sm uppercase font-bold leading-6;
+    }
+    .text-md-dark {
+        @apply text-gray-700 text-sm font-medium leading-6;
+    }
+    .text-md-light {
+        @apply text-gray-400 text-sm font-medium leading-5;
+    }
+    .text-car-name {
+        @apply text-2xl font-bold uppercase text-gray-600 leading-6;
+    }
+    .text-car-model {
+        @apply text-2xl font-sans font-thin text-gray-600 leading-6;
+    }
+    .compound-wrap {
+        @apply relative items-center justify-start w-full pb-5 px-5;
+    }
+    .compound-image {
+        @apply  w-12 h-12 bg-gray-300 rounded-lg bg-opacity-25;
+    }
+    .input {
+        @apply rounded p-1.5 pl-2.5 text-base text-gray-500 font-normal leading-6 bg-white;
+    }
+    .check-icon {
+        @apply absolute rounded-full -top-1.5 -left-1.5 p-1 bg-white;
+    }
+    .check-icon-active {
+        @apply absolute bg-blue-500 rounded-full -top-1.5 -left-1.5 p-1;
+    }
+    .scan-and-park {
+        @apply bg-white p-5 shadow-2xl w-full;
+    }
+}
