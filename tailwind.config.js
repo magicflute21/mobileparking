@@ -7,7 +7,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: theme => ({
-        'cars-image': "url('/public/img/carsbackground.png')",
+        'cars-image': "url('/public/img/carsbackgroundbw.png')",
      })
     },
   },

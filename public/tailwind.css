@@ -4229,7 +4229,7 @@ video {
 }
 
 .bg-cars-image {
-  background-image: url('/public/img/carsbackground.png');
+  background-image: url('/public/img/carsbackgroundbw.png');
 }
 
 .from-transparent {
@@ -34847,7 +34847,7 @@ video {
   }
 
   .sm\:bg-cars-image {
-    background-image: url('/public/img/carsbackground.png');
+    background-image: url('/public/img/carsbackgroundbw.png');
   }
 
   .sm\:from-transparent {
@@ -65387,7 +65387,7 @@ video {
   }
 
   .md\:bg-cars-image {
-    background-image: url('/public/img/carsbackground.png');
+    background-image: url('/public/img/carsbackgroundbw.png');
   }
 
   .md\:from-transparent {
@@ -95927,7 +95927,7 @@ video {
   }
 
   .lg\:bg-cars-image {
-    background-image: url('/public/img/carsbackground.png');
+    background-image: url('/public/img/carsbackgroundbw.png');
   }
 
   .lg\:from-transparent {
@@ -126467,7 +126467,7 @@ video {
   }
 
   .xl\:bg-cars-image {
-    background-image: url('/public/img/carsbackground.png');
+    background-image: url('/public/img/carsbackgroundbw.png');
   }
 
   .xl\:from-transparent {
@@ -157007,7 +157007,7 @@ video {
   }
 
   .\32xl\:bg-cars-image {
-    background-image: url('/public/img/carsbackground.png');
+    background-image: url('/public/img/carsbackgroundbw.png');
   }
 
   .\32xl\:from-transparent {
