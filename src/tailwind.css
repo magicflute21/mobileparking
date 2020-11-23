@@ -28,6 +28,15 @@
     .text-car-model {
         @apply text-2xl font-sans font-thin text-gray-600 leading-6;
     }
+    .text-xxs-bold {
+        @apply text-xxs font-sans font-bold text-gray-400 leading-3 uppercase;
+    }
+    .text-storage-details {
+        @apply  text-white text-xs leading-tight text-right;
+    }
+    .text-storage-initials {
+        @apply font-bold text-3xl leading-6 text-white font-sans mr-6;
+    }
     .compound-wrap {
         @apply relative items-center justify-start w-full pb-5 px-5;
     }
@@ -46,4 +55,7 @@
     .scan-and-park {
         @apply bg-white p-5 shadow-2xl w-full;
     }
+    /* .storage-item {
+        @apply ; 
+    } */
 }
