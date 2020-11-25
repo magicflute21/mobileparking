@@ -19,7 +19,7 @@
             </div>
         </header>
         <main class="h-full w-full flex flex-col">
-            <div class="content-wrapper bg-gray-100 bg-opacity-10 relative flex flex-col h-full pt-3">
+            <div class="content-wrapper-light bg-gray-100 bg-opacity-10 relative flex flex-col h-full pt-3">
                 <div class="flex flex-col h-full">
                     <p class="text-sm-dark mb-7 px-5">select storage</p>
                     <!-- component-> compound -->
@@ -63,10 +63,13 @@
                     </div>
                     
 <!-- scan and park component -->
-                    <div class="scan-and-park mt-auto">
-                        <form action="" class="flex">
-                            <input type="text" class="input border rounded-r-none" value="Scan or type in parking slot">
-                            <button class="btn bg-blue-500 rounded-l-none">Park</button>
+                    <div class="scan-and-park mt-auto flex justify-between">
+                        <button class="return-button flex flex-shrink-0 justify-center items-center">
+                            <img src="/public/img/return-button.svg" alt="">
+                        </button>
+                        <form action="" class="flex w-full">
+                            <input type="text" class="input border rounded-r-none flex-grow-2" value="Scan or type in parking slot">
+                            <button class="btn bg-blue-500 rounded-l-none flex-grow">Park</button>
                         </form>
                     </div>
                 </div>

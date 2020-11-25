@@ -13,14 +13,39 @@ module.exports = {
     },
     backgroundColor: theme => ({
       ...theme('colors'),
-      'light-gray': '#c4c4c4',
+      'light-gray': '#E5E7EB',
+      'disabled-gray': '#F4F5F7',
      }),
     extend: {
       backgroundImage: theme => ({
         'cars-image': "url('/public/img/carsbackgroundbw.png')",
      }),
+     flexGrow: {
+       '2': 2
+     },
      fontSize: {
        'xxs': '0.5rem'
+     },
+     borderRadius: {
+       '4xl' : '2rem'
+     },
+     screens: {
+       'landscape' : {'min': '550px'},
+       'iphone5' : {'max' : '320px'}
+     },
+     minHeight: {
+       '20' : '86px'
+     },
+     minWidth: {
+       '24' : '158px'
+     },
+     colors: {
+       orange: {
+         '600': '#DD6B20'
+       },
+       gray: {         
+         'disabled' : '#F4F5F7',
+       },
      },
     },
   },

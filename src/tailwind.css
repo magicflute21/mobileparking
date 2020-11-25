@@ -1,14 +1,16 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
-
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
 @layer components {
     .btn {
-        @apply text-white w-full py-1.5 px-4 rounded text-base font-medium leading-6 shadow-sm;
+        @apply text-white py-1.5 px-4 rounded text-base font-medium leading-6 shadow-sm;
+    }
+    .btn-full {
+        @apply w-full;
+    }
+    .page-wrapper-light {
+        @apply bg-light-gray bg-opacity-10; 
     }
     .text-sm-uppercase {
         @apply text-gray-400 text-xs font-sans font-bold leading-6 uppercase;
@@ -35,7 +37,7 @@
         @apply  text-white text-xs leading-tight text-right;
     }
     .text-storage-initials {
-        @apply font-bold text-3xl leading-6 text-white font-sans mr-6;
+        @apply font-bold text-3xl leading-6 text-white font-sans mr-6 uppercase;
     }
     .compound-wrap {
         @apply relative items-center justify-start w-full pb-5 px-5;
@@ -53,7 +55,19 @@
         @apply absolute bg-blue-500 rounded-full -top-1.5 -left-1.5 p-1;
     }
     .scan-and-park {
-        @apply bg-white p-5 shadow-2xl w-full;
+        @apply bg-white py-5 pr-5 shadow-2xl;
+    }
+    .storage-number {
+        @apply justify-center items-center py-2.5 px-5 bg-white rounded;
+    }
+    .storage-number-a {
+        @apply justify-start items-center py-2.5 px-5 bg-white rounded
+    }
+    .storage-number-text {
+        @apply font-bold leading-6 text-base text-gray-700 font-sans;
+    }
+    .return-button {
+        @apply bg-orange-600 w-10 h-10 rounded-r justify-center items-center mr-4;
     }
     /* .storage-item {
         @apply ; 

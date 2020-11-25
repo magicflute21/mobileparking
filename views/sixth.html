@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/tailwind.css">
+    <title>Mobile Parking Solution</title>
+</head>
+<body>
+    <div class="page-wrapper-light flex flex-col justify-between h-screen w-screen overflow-auto">
+        <header class="z-20 relative">
+            <div class="bg-white h-16 flex justify-between items-center py-1.5 pr-5 pl-4 shadow-md">
+                <div class="w-36 h-auto">
+                    <img src="/public/img/Advectus-Logo500.png" alt="Advectus" class="w-full h-full object-cover">
+                </div>
+                <div class="h-11 w-11 rounded-full bg-gray-200 flex justify-center items-center">
+                    <p class="font-normal text-sm uppercase">md</p>
+                </div>
+            </div>
+        </header>
+        <main class="h-full w-full flex flex-col">
+            <div class="content-wrapper bg-gray-100 bg-opacity-10 relative flex flex-col h-full pt-3">
+                <div class="flex flex-col h-full">
+                    <p class="text-sm-dark mb-7 px-5">select storage</p>
+                    <!-- component-> compound -->
+                    <div class="compound-wrap flex pb-5 border-solid border-b">
+                        <div class="compound-image flex justify-center items-center mr-2.5 relative">
+
+                            <img src="/public/img/location-vector.svg" alt="location icon">
+                        </div>
+                        <div class="compound-textbox">
+                            <p class="text-md-dark">Main Compound</p>
+                            <p class="text-md-light">UK main, close to Sheerness</p>
+                        </div>
+                    </div>
+
+                    
+                        <div class="storage-units w-full p-5 ">
+                            <div class="flex mb-4 shadow-md">
+                                <div class="storage-number-a flex flex-grow shadow rounded-r-none">
+                                    <p class="storage-number-text">1</p>
+                                </div>
+                                <div class="storage-number flex flex-grow-0 shadow rounded-none">
+                                    <p class="storage-number-text">A</p>
+                                </div>
+                                <div class="storage-number flex flex-grow-0 shadow rounded-none">
+                                    <p class="storage-number-text">B</p>
+                                </div>
+                                <div class="storage-number flex flex-grow-0 shadow rounded-l-none">
+                                    <p class="storage-number-text">C</p>
+                                </div>
+                            </div>  
+
+                            <div class="flex mb-4 shadow-md">
+                                <div class="storage-number-a flex flex-grow shadow rounded-r-none">
+                                    <p class="storage-number-text">2</p>
+                                </div>
+                                <div class="storage-number flex flex-grow-0 shadow rounded-none">
+                                    <p class="storage-number-text">A</p>
+                                </div>
+                                <div class="storage-number flex flex-grow-0 shadow rounded-none">
+                                    <p class="storage-number-text">B</p>
+                                </div>
+                                <div class="storage-number flex flex-grow-0 shadow rounded-l-none">
+                                    <p class="storage-number-text">C</p>
+                                </div>
+                            </div>     
+
+                            <div class="flex mb-4 shadow-md">
+                                <div class="storage-number-a flex flex-grow shadow rounded-r-none">
+                                    <p class="storage-number-text">3</p>
+                                </div>
+                                <div class="storage-number flex flex-grow-0 shadow rounded-none">
+                                    <p class="storage-number-text bg-disabled-gray">A</p>
+                                </div>
+                                <div class="storage-number flex flex-grow-0 shadow rounded-none">
+                                    <p class="storage-number-text">B</p>
+                                </div>
+                                <div class="storage-number flex flex-grow-0 shadow rounded-l-none">
+                                    <p class="storage-number-text">C</p>
+                                </div>
+                            </div>     
+                        </div>
+
+                    
+                  <!-- scan and park component -->
+                  <div class="scan-and-park mt-auto flex justify-between">
+                    <button class="return-button flex flex-shrink-0 justify-center items-center">
+                        <img src="/public/img/return-button.svg" alt="return">
+                    </button>
+                    <form action="" class="flex w-full">
+                        <input type="text" class="input border rounded-r-none flex-grow-2 flex-shrink" value="Scan or type in parking slot">
+                        <button class="btn bg-blue-500 rounded-l-none flex-grow">Park</button>
+                    </form>
+                </div>
+                </div>
+            </div>    
+        </main>
+    </div>
+</body>
+</html>

@@ -7,7 +7,7 @@
     <title>Mobile Parking Solution</title>
 </head>
 <body>
-    <div class="page-wrapper flex flex-col justify-between h-screen w-screen overflow-auto">
+    <div class="page-wrapper-light flex flex-col justify-between h-screen w-screen overflow-auto">
         <header class="z-20 relative">
             <div class="bg-white h-16 flex justify-between items-center py-1.5 pr-5 pl-4 shadow-md">
                 <div class="w-36 h-auto">
@@ -34,10 +34,14 @@
                         </div>
                     </div>
 
-                    <!-- ------the blue boxes area-------- -->
+                    <!-- ------the blue boxes area-------- --> 
+                    <!-- flex version (didn't want to delete it yet) -->
 
-                    <div class="storage-areas w-full flex flex-wrap justify-between p-2.5">
-                        <div class="storage-item p-3 bg-gray-700 rounded-lg shadow-xl flex-basis m-2.5 h-24 relative">
+                    <!-- <div class="storage-areas w-full flex flex-wrap justify-between p-2.5">
+
+                        blue box item
+
+                        <div class="storage-item p-3 bg-gray-700 rounded-lg shadow-xl flex-initial m-2.5 relative">
                             <div class="check-icon-active">
                                 <img src="/public/img/check-vector.svg" alt="">
                             </div>
@@ -48,56 +52,78 @@
                                 </p>
                                 <p class="text-storage-details">New hatchbacks blue, white</p>
                             </div>
+                        </div> -->
+
+                        <!-- ----------------------- -->
+
+                        <!-- the blue box area grid -->
+
+                        <div class="storage-area w-full grid grid-cols-2 landscape:grid-cols-3 gap-x-5 gap-5  p-5">
+                            
+                            <div class="storage-item p-3 bg-gray-700 rounded-lg shadow-xl min-h-20 min-w-24 relative">
+                                <div class="check-icon-active">
+                                    <img src="/public/img/check-vector.svg" alt="">
+                                </div>
+                                <p class="text-xxs-bold">general storage</p>
+                                <div class="flex justify-between items-center mt-3">
+                                    <p class="text-storage-initials">
+                                        A
+                                    </p>
+                                    <p class="text-storage-details">New hatchbacks blue, white</p>
+                                </div>
+                            </div>
+                            
+                            <div class="storage-item p-3 bg-gray-700 rounded-lg shadow-xl min-h-20 min-w-24 relative">
+                                <div class="check-icon border">
+                                    <img src="/public/img/check-vector.svg" alt="check vector">
+                                </div>
+                                <p class="text-xxs-bold">general storage</p>
+                                <div class="flex justify-between items-center mt-3">
+                                    <p class="text-storage-initials">
+                                        B
+                                    </p>
+                                    <p class="text-storage-details">New hatchbacks blue</p>
+                                </div>
+                            </div>
+                            
+                            <div class="storage-item p-3 bg-gray-700 rounded-lg shadow-xl min-h-20 min-w-24 relative">
+                                <div class="check-icon border">
+                                    <img src="/public/img/check-vector.svg" alt="check vector">
+                                </div>
+                                <p class="text-xxs-bold">general storage</p>
+                                <div class="flex justify-between items-center mt-3">
+                                    <p class="text-storage-initials">
+                                        dw
+                                    </p>
+                                    <p class="text-storage-details">New hatchbacks blue, white</p>
+                                </div>
+                            </div>
+                            
+                            <div class="storage-item p-3 bg-gray-700 rounded-lg shadow-xl min-h-20 min-w-24 relative">
+                                <div class="check-icon border">
+                                    <img src="/public/img/check-vector.svg" alt="check vector">
+                                </div>
+                                <p class="text-xxs-bold">general storage</p>
+                                <div class="flex justify-between items-center mt-3">
+                                    <p class="text-storage-initials">
+                                        rl
+                                    </p>
+                                    <p class="text-storage-details">New hatchbacks blue, white</p>
+                                </div>
+                            </div>
+
                         </div>
 
-                        <div class="storage-item p-3 bg-gray-700 rounded-lg shadow-xl flex-basis m-2.5 h-24 relative">
-                            <div class="check-icon border">
-                                <img src="/public/img/check-vector.svg" alt="check vector">
-                            </div>
-                            <p class="text-xxs-bold">general storage</p>
-                            <div class="flex justify-between items-center mt-3">
-                                <p class="text-storage-initials">
-                                    A
-                                </p>
-                                <p class="text-storage-details">New hatchbacks blue, white</p>
-                            </div>
-                        </div>
-                        
-                        <div class="storage-item p-3 bg-gray-700 rounded-lg shadow-xl  flex-basis m-2.5 h-24 relative">
-                            <div class="check-icon border">
-                                <img src="/public/img/check-vector.svg" alt="check vector">
-                            </div>
-                            <p class="text-xxs-bold">general storage</p>
-                            <div class="flex justify-between items-center mt-3">
-                                <p class="text-storage-initials">
-                                    A
-                                </p>
-                                <p class="text-storage-details">New hatchbacks blue, white</p>
-                            </div>
-                        </div>
-
-                        <div class="text-storage-item p-3 bg-gray-700 rounded-lg shadow-xl  flex-basis m-2.5 h-24 relative">
-                            <div class="check-icon border">
-                                <img src="/public/img/check-vector.svg" alt="check vector">
-                            </div>
-                            <p class="text-xxs-bold">general storage</p>
-                            <div class="flex justify-between items-center mt-3">
-                                <p class="text-storage-initials">
-                                    A
-                                </p>
-                                <p class="text-storage-details">New hatchbacks blue, white</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    
-<!-- scan and park component -->
-                    <div class="scan-and-park mt-auto">
-                        <form action="" class="flex">
-                            <input type="text" class="input border rounded-r-none" value="Scan or type in parking slot">
-                            <button class="btn bg-blue-500 rounded-l-none">Park</button>
-                        </form>
-                    </div>
+                  <!-- scan and park component -->
+                  <div class="scan-and-park mt-auto flex justify-between">
+                    <button class="return-button flex flex-shrink-0 justify-center items-center">
+                        <img src="/public/img/return-button.svg" alt="return">
+                    </button>
+                    <form action="" class="flex w-full">
+                        <input type="text" class="input border rounded-r-none flex-grow-2 flex-shrink" value="Scan or type in parking slot">
+                        <button class="btn bg-blue-500 rounded-l-none flex-grow">Park</button>
+                    </form>
+                </div>
                 </div>
             </div>    
         </main>
