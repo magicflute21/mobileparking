@@ -35,7 +35,7 @@
                     </div>
 
                     
-                        <div class="storage-units w-full p-5 ">
+                        <div class="storage-units w-full p-5 iphone5:p-2">
                             <div class="flex mb-4 shadow-md">
                                 <div class="storage-number-a flex flex-grow shadow rounded-r-none">
                                     <p class="storage-number-text">1</p>
@@ -61,23 +61,48 @@
                                 <div class="storage-number flex flex-grow-0 shadow rounded-none">
                                     <p class="storage-number-text">B</p>
                                 </div>
+                                <div class="storage-number flex flex-grow-0 shadow rounded-none">
+                                    <p class="storage-number-text">c</p>
+                                </div>
                                 <div class="storage-number flex flex-grow-0 shadow rounded-l-none">
-                                    <p class="storage-number-text">C</p>
+                                    <p class="storage-number-text">d</p>
                                 </div>
                             </div>     
 
+                            <!-- disabled styling bg-disabled-gray and text-gray-300 -->
                             <div class="flex mb-4 shadow-md">
                                 <div class="storage-number-a flex flex-grow shadow rounded-r-none">
                                     <p class="storage-number-text">3</p>
                                 </div>
-                                <div class="storage-number flex flex-grow-0 shadow rounded-none">
-                                    <p class="storage-number-text bg-disabled-gray">A</p>
+                                <div class="storage-number flex flex-grow-0 shadow rounded-none bg-disabled-gray">
+                                    <p class="storage-number-text text-gray-300">A</p>
                                 </div>
                                 <div class="storage-number flex flex-grow-0 shadow rounded-none">
                                     <p class="storage-number-text">B</p>
                                 </div>
                                 <div class="storage-number flex flex-grow-0 shadow rounded-l-none">
                                     <p class="storage-number-text">C</p>
+                                </div>
+                            </div>     
+
+                            <div class="flex mb-4 shadow-md">
+                                <div class="storage-number-a flex flex-grow shadow rounded-r-none bg-disabled-gray">
+                                    <p class="storage-number-text text-gray-300">4</p>
+                                </div>
+                                <div class="storage-number flex flex-grow-0 shadow rounded-none bg-disabled-gray">
+                                    <p class="storage-number-text text-gray-300">A</p>
+                                </div>
+                                <div class="storage-number flex flex-grow-0 shadow rounded-none bg-disabled-gray">
+                                    <p class="storage-number-text text-gray-300">B</p>
+                                </div>
+                                <div class="storage-number flex flex-grow-0 shadow rounded-l-none bg-disabled-gray">
+                                    <p class="storage-number-text text-gray-300">C</p>
+                                </div>
+                                <div class="storage-number flex flex-grow-0 shadow rounded-l-none bg-disabled-gray">
+                                    <p class="storage-number-text text-gray-300">d</p>
+                                </div>
+                                <div class="storage-number flex flex-grow-0 shadow rounded-l-none bg-disabled-gray">
+                                    <p class="storage-number-text text-gray-300">d</p>
                                 </div>
                             </div>     
                         </div>
@@ -88,9 +113,9 @@
                     <button class="return-button flex flex-shrink-0 justify-center items-center">
                         <img src="/public/img/return-button.svg" alt="return">
                     </button>
-                    <form action="" class="flex w-full">
+                    <form action="" class="flex w-full h-full">
                         <input type="text" class="input border rounded-r-none flex-grow-2 flex-shrink" value="Scan or type in parking slot">
-                        <button class="btn bg-blue-500 rounded-l-none flex-grow">Park</button>
+                        <button class="btn input-btn flex-grow">Park</button>
                     </form>
                 </div>
                 </div>

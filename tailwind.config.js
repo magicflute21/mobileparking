@@ -13,31 +13,36 @@ module.exports = {
     },
     backgroundColor: theme => ({
       ...theme('colors'),
-      'light-gray': '#E5E7EB',
+      'light-gray': '#C4C4C4',
       'disabled-gray': '#F4F5F7',
+      'blue-350' : '#63B3ED'
      }),
     extend: {
       backgroundImage: theme => ({
-        'cars-image': "url('/public/img/carsbackgroundbw.png')",
+        'cars-image': "url('./public/img/carsbackgroundbw.png')",
      }),
      flexGrow: {
        '2': 2
      },
      fontSize: {
-       'xxs': '0.5rem'
+       'xxs': '0.5rem',
+       'xxs-plus' : '0.65rem'
      },
      borderRadius: {
        '4xl' : '2rem'
      },
      screens: {
        'landscape' : {'min': '550px'},
-       'iphone5' : {'max' : '320px'}
+       'iphone5' : {'max' : '360px'}
      },
      minHeight: {
        '20' : '86px'
      },
      minWidth: {
-       '24' : '158px'
+       '24' : '145px'
+     },
+     gridTemplateColumns: {
+      'confirm' : '12px 256px'
      },
      colors: {
        orange: {
@@ -46,6 +51,10 @@ module.exports = {
        gray: {         
          'disabled' : '#F4F5F7',
        },
+       blue : {
+         '350' : '#63B3ED',
+         '500e': '#4299E1'
+       }
      },
     },
   },

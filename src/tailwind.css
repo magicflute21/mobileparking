@@ -9,6 +9,9 @@
     .btn-full {
         @apply w-full;
     }
+    .input-btn {
+        @apply bg-blue-500e rounded-l-none;
+    }
     .page-wrapper-light {
         @apply bg-light-gray bg-opacity-10; 
     }
@@ -34,10 +37,10 @@
         @apply text-xxs font-sans font-bold text-gray-400 leading-3 uppercase;
     }
     .text-storage-details {
-        @apply  text-white text-xs leading-tight text-right;
+        @apply text-white text-xs iphone5:text-xxs-plus leading-tight text-right;
     }
     .text-storage-initials {
-        @apply font-bold text-3xl leading-6 text-white font-sans mr-6 uppercase;
+        @apply font-bold text-3xl leading-6 text-white font-sans uppercase mr-6 iphone5:mr-2;
     }
     .compound-wrap {
         @apply relative items-center justify-start w-full pb-5 px-5;
@@ -52,24 +55,24 @@
         @apply absolute rounded-full -top-1.5 -left-1.5 p-1 bg-white;
     }
     .check-icon-active {
-        @apply absolute bg-blue-500 rounded-full -top-1.5 -left-1.5 p-1;
+        @apply absolute bg-blue-500e rounded-full -top-1.5 -left-1.5 p-1;
     }
     .scan-and-park {
         @apply bg-white py-5 pr-5 shadow-2xl;
     }
     .storage-number {
-        @apply justify-center items-center py-2.5 px-5 bg-white rounded;
+        @apply justify-center items-center py-2.5 iphone5:py-3 px-5 iphone5:px-6 bg-white rounded;
     }
     .storage-number-a {
         @apply justify-start items-center py-2.5 px-5 bg-white rounded
     }
     .storage-number-text {
-        @apply font-bold leading-6 text-base text-gray-700 font-sans;
+        @apply font-bold leading-6 text-base iphone5:text-sm text-gray-700 font-sans uppercase;
     }
     .return-button {
         @apply bg-orange-600 w-10 h-10 rounded-r justify-center items-center mr-4;
     }
-    /* .storage-item {
-        @apply ; 
-    } */
+    .storage-item {
+        @apply p-3 bg-gray-700 rounded-lg shadow-xl min-h-20 min-w-24 relative; 
+    }
 }
