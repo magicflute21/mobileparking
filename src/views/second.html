@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Parking Solution</title>
+</head>
+<body>
+    <div class="page-wrapper flex flex-col justify-between h-screen w-screen bg-gray-200 bg-opacity-25 overflow-auto">
+        <header class="z-20 relative">
+            <div class="bg-white h-16 flex justify-between items-center py-1.5 pr-5 pl-4 shadow-md">
+                <div class="w-36 h-auto">
+                    <img src="/dist/img/Advectus-Logo500.png" alt="Advectus" class="w-full h-full object-cover">
+                </div>
+                <div class="h-11 w-11 rounded-full bg-gray-200 flex justify-center items-center">
+                    <p class="font-normal text-sm uppercase">md</p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="content-wrapper relative flex flex-col h-full">
+                <img src="/dist/img/car-vector.svg" alt="car illustration" class="absolute right-0 top-5 z-0 ">
+                <div class="flex flex-col relative z-10  pt-8 pb-20 iphone5:pb-12 px-5">
+                    <h2 class="text-car-name mb-3">kia stinger</h2>
+                    <h3 class="text-car-model">GT 2.0D 4WD AT (2019)</h3>
+                    <div class="vin-number mt-6">
+                        <p class="text-gray-400 text-xs font-sans font-bold  leading-6 uppercase">vin number</p>
+                        <p class="text-gray-600 text-sm uppercase font-bold leading-6">4S3BJ6329M1918965</p>
+                    </div>
+                    <div class="car-colour mt-6">
+                        <p class="text-gray-400 text-xs font-sans font-bold  leading-6 uppercase">colour</p>
+                        <p class="text-gray-600 text-sm uppercase font-bold leading-6">DARK BLUE PEARL</p>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="last-location-cards mt-auto relative">
+                    <div class="card-1 bg-white rounded-4xl rounded-b-none w-full z-40 shadow-2xl p-5 absolute bottom-0">
+                        <div class="flex justify-between mb-6">
+                            <div class="arrival-date bg-blue-350 bg-opacity-50 rounded-full px-3 py-1 flex items-center justify-between">
+                                <div class="date-icon h-3.5 w-3.5 mr-2">
+                                    <img src="/dist/img/date-vector.svg" alt="date icon" class="h-full w-auto">
+                                </div>
+                                <p class="text-blue-500e font-bold text-xs">01/11/2020</p>
+                            </div>
+                            <div class="x-close-card p-2 cursor-pointer self-start -mt-3">
+                                <img src="/dist/img/x-close.svg" alt="" class="h-5 w-auto">
+                            </div>
+                        </div>
+                        <h1 class="text-large-uppercase mb-3 text-4xl min-h-80">arrived at amsterdam</h1>
+                        <p class="uppercase text-xs text-gray-400 font-bold leading-6 mb-8">last location update</p>
+                        <div class="park-buttons flex justify-between items-center">
+                            <button class="btn btn-full mr-2.5 bg-blue-500e w-full">Park</button>
+                            <button class="btn btn-full bg-gray-300 font-medium w-full">Put Away</button>
+                        </div>
+                    </div>
+
+                    <div class="card-2 bg-white rounded-4xl rounded-b-none w-full shadow-2xl p-5 relative z-30 absolute bottom-2.5">
+                        <div class="flex justify-between mb-6">
+                            <div class="arrival-date bg-blue-350 rounded-full px-3 py-1 flex items-center justify-between">
+                                <div class="date-icon h-3.5 w-3.5 mr-2">
+                                    <img src="/dist/img/date-vector.svg" alt="date icon" class="h-full w-auto">
+                                </div>
+                                <p class="text-blue-500e font-bold text-xs">01/11/2020</p>
+                            </div>
+                            <div class="x-close-card p-2 cursor-pointer self-start -mt-3">
+                                <img src="/dist/img/x-close.svg" alt="" class="h-5 w-auto">
+                            </div>
+                        </div>
+                        <h1 class="text-large-uppercase mb-3 text-4xl min-h-80">arrived at amsterdam</h1>
+                        <p class="uppercase text-xs text-gray-400 font-bold leading-6 mb-9">last location update</p>
+                        <div class="park-buttons flex justify-between items-center">
+                            <button class="btn btn-full mr-2.5 bg-blue-500e">Park</button>
+                            <button class="btn btn-full bg-gray-300 font-medium">Put Away</button>
+                        </div>
+                    </div>
+
+                    <div class="card-3 bg-white rounded-4xl rounded-b-none w-full z-20 shadow-2xl p-5 absolute bottom-5">
+                        <div class="flex justify-between mb-6">
+                            <div class="arrival-date bg-blue-350 rounded-full px-3 py-1 flex items-center justify-between">
+                                <div class="date-icon h-3.5 w-3.5 mr-2">
+                                    <img src="/dist/img/date-vector.svg" alt="date icon" class="h-full w-auto">
+                                </div>
+                                <p class="text-blue-500e font-bold text-xs">01/11/2020</p>
+                            </div>
+                            <div class="x-close-card p-2 cursor-pointer self-start -mt-3">
+                                <img src="/dist/img/x-close.svg" alt="" class="h-5 w-auto">
+                            </div>
+                        </div>
+                        <h1 class="text-large-uppercase mb-3 text-4xl min-h-80">arrived at amsterdam</h1>
+                        <p class="uppercase text-xs text-gray-400 font-bold leading-6 mb-9">last location update</p>
+                        <div class="park-buttons flex justify-between items-center">
+                            <button class="btn btn-full mr-2.5 bg-blue-500e">Park</button>
+                            <button class=" btn btn-full bg-gray-300 font-medium">Put Away</button>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </main>
+    </div>
+
+    <script src="../dev.js"></script>
+
+</body>
+</html>

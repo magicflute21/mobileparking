@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body class="h-screen">
+    <div class="page-wrapper flex flex-col justify-between h-screen w-screen overflow-auto">
+        <header class="z-20 relative">
+            <div class="bg-white h-16 flex justify-between items-center py-1.5 pr-5 pl-4 shadow-md">
+                <div class="w-36 h-auto">
+                    <img src="/dist/img/Advectus-Logo500.png" alt="Advectus" class="w-full h-full object-cover">
+                </div>
+                <div class="h-11 w-11 rounded-full bg-gray-200 flex justify-center items-center">
+                    <p class="font-normal text-sm uppercase">md</p>
+                </div>
+            </div>
+        </header>
+        <main class="h-full w-full flex flex-col">
+            <div class="content-wrapper-light bg-gray-100 bg-opacity-10 relative flex flex-col h-full pt-3">
+                <div class="flex flex-col h-full">
+                    <p class="text-sm-dark mb-7 px-5">select storage</p>
+                    <!-- component-> compound -->
+                    <div class="compound-wrap flex iphone5:pb-5 border-solid border-b">
+                        <div class="compound-image flex justify-center items-center mr-2.5 relative">
+                            <div class="check-icon-active flex">
+                                <img src="/dist/img/check-vector.svg" alt="selected">
+                            </div>
+                            <img src="/dist/img/location-vector.svg" alt="location icon">
+                        </div>
+                        <div class="compound-textbox">
+                            <p class="text-md-dark">Main Compound</p>
+                            <p class="text-md-light">UK main, close to Sheerness</p>
+                        </div>
+                    </div>
+
+                    <div class="compound-wrap flex py-5 border-solid border-b">
+                        <div class="compound-image flex justify-center items-center mr-2.5 relative">
+                            <div class="check-icon border">
+                                <img src="/dist/img/check-vector.svg" alt="check vector">
+                            </div>
+                            <img src="/dist/img/location-vector.svg" alt="location icon">
+                        </div>
+                        <div class="compound-textbox">
+                            <p class="text-md-dark">Main Compound</p>
+                            <p class="text-md-light">UK main, close to Sheerness</p>
+                        </div>
+                    </div>
+
+                    <div class="compound-wrap flex py-5 border-solid border-b">
+                        <div class="compound-image flex justify-center items-center mr-2.5 relative">
+                            <div class="check-icon border">
+                                <img src="/dist/img/check-vector.svg" alt="check vector">
+                            </div>
+                            <img src="/dist/img/location-vector.svg" alt="location icon">
+                        </div>
+                        <div class="compound-textbox">
+                            <p class="text-md-dark">Main Compound</p>
+                            <p class="text-md-light">UK main, close to Sheerness</p>
+                        </div>
+                    </div>
+                    
+<!-- scan and park component -->
+                    <div class="scan-and-park mt-auto flex justify-between">
+                        <button class="return-button flex flex-shrink-0 justify-center items-center">
+                            <img src="/dist/img/return-button.svg" alt="">
+                        </button>
+                        <form action="" class="flex w-full h-full">
+                            <input type="text" class="input border rounded-r-none flex-grow-2" placeholder="Scan or type in parking slot">
+                            <button class="btn input-btn flex-grow">Park</button>
+                        </form>
+                    </div>
+                </div>
+            </div>    
+        </main>
+    </div>
+    <script src="../dev.js"></script>
+
+</body>
+</html>

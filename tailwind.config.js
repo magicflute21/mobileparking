@@ -1,5 +1,5 @@
 module.exports = {
-  purge: [],
+  purge: ['./**/*.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     flex: {
@@ -15,11 +15,13 @@ module.exports = {
       ...theme('colors'),
       'light-gray': '#C4C4C4',
       'disabled-gray': '#F4F5F7',
-      'blue-350' : '#63B3ED'
+      'blue-350' : '#63B3ED',
+      'blue-500e' : '#4299E1',
+      // 'orange-600': "#DD6B20"
      }),
     extend: {
       backgroundImage: theme => ({
-        'cars-image': "url('./public/img/carsbackgroundbw.png')",
+        'cars-image': "url('/src/img/carsbackgroundbw.png')",
      }),
      flexGrow: {
        '2': 2
@@ -36,7 +38,10 @@ module.exports = {
        'iphone5' : {'max' : '360px'}
      },
      minHeight: {
-       '20' : '86px'
+       '20' : '86px',
+       '270': '270px',
+       '320': '320px',
+       '80' : '80px'
      },
      minWidth: {
        '24' : '145px'

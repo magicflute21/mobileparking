@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+    <div class="page-wrapper-light flex flex-col justify-between h-screen w-screen overflow-auto">
+        <header class="z-20 relative">
+            <div class="bg-white h-16 flex justify-between items-center py-1.5 pr-5 pl-4 shadow-md">
+                <div class="w-36 h-auto">
+                    <img src="/dist/img/Advectus-Logo500.png" alt="Advectus" class="w-full h-full object-cover">
+                </div>
+                <div class="h-11 w-11 rounded-full bg-gray-200 flex justify-center items-center">
+                    <p class="font-normal text-sm uppercase">md</p>
+                </div>
+            </div>
+        </header>
+        <main class="h-full w-full flex flex-col">
+            <div class="content-wrapper bg-gray-100 bg-opacity-10 relative flex flex-col h-full pt-3">
+                <div class="flex flex-col h-full">
+                    <p class="text-sm-dark mb-7 px-5">select storage</p>
+                    <!-- component-> compound -->
+                    <div class="compound-wrap flex pb-5 border-solid border-b">
+                        <div class="compound-image flex justify-center items-center relative">
+                            <img src="/dist/img/location-vector.svg" alt="location icon">
+                        </div>
+                        <div class="compound-textbox">
+                            <p class="text-md-dark">Main Compound</p>
+                            <p class="text-md-light">UK main, close to Sheerness</p>
+                        </div>
+                    </div>
+
+                        <div class="storage-area w-full grid grid-cols-2 landscape:grid-cols-3 gap-x-5 gap-5 iphone5:gap-x-2 iphone5:gap-3 iphone5:p-2 iphone5:pt-5 p-5">
+                            
+                            <div class="storage-item p-3 bg-gray-700 rounded-lg shadow-xl min-h-20 min-w-20 relative">
+                                <div class="check-icon-active flex">
+                                    <img src="/dist/img/check-vector.svg" alt="">
+                                </div>
+                                <p class="text-xxs-bold">general storage</p>
+                                <div class="flex justify-between items-center mt-3">
+                                    <p class="text-storage-initials">
+                                        A
+                                    </p>
+                                    <p class="text-storage-details">New hatchbacks blue, white</p>
+                                </div>
+                            </div>
+                            
+                            <div class="storage-item p-3 bg-gray-700 rounded-lg shadow-xl min-h-20 min-w-20 relative">
+                                <div class="check-icon border">
+                                    <img src="/dist/img/check-vector.svg" alt="check vector">
+                                </div>
+                                <p class="text-xxs-bold">general storage</p>
+                                <div class="flex justify-between items-center mt-3">
+                                    <p class="text-storage-initials">
+                                        B
+                                    </p>
+                                    <p class="text-storage-details">New hatchbacks blue</p>
+                                </div>
+                            </div>
+                            
+                            <div class="storage-item p-3 bg-gray-700 rounded-lg shadow-xl min-h-20 min-w-20 relative">
+                                <div class="check-icon border">
+                                    <img src="/dist/img/check-vector.svg" alt="check vector">
+                                </div>
+                                <p class="text-xxs-bold">general storage</p>
+                                <div class="flex justify-between items-center mt-3">
+                                    <p class="text-storage-initials">
+                                        dw
+                                    </p>
+                                    <p class="text-storage-details">New hatchbacks blue, white</p>
+                                </div>
+                            </div>
+                            
+                            <div class="storage-item p-3 bg-gray-700 rounded-lg shadow-xl min-h-20 min-w-20 relative">
+                                <div class="check-icon border">
+                                    <img src="/dist/img/check-vector.svg" alt="check vector">
+                                </div>
+                                <p class="text-xxs-bold">general storage</p>
+                                <div class="flex justify-between items-center mt-3">
+                                    <p class="text-storage-initials">
+                                        rl
+                                    </p>
+                                    <p class="text-storage-details">New hatchbacks blue, white</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                  <!-- scan and park component -->
+                  <div class="scan-and-park mt-auto flex justify-between items-center">
+                    <button class="return-button flex flex-shrink-0 justify-center items-center">
+                        <img src="/dist/img/return-button.svg" alt="return">
+                    </button>
+                    <form action="" class="flex w-full h-full">
+                        <input type="text" class="input border rounded-r-none flex-grow-2 flex-shrink" placeholder="Scan or type in parking slot">
+                        <button class="btn input-btn flex-grow">Park</button>
+                    </form>
+                </div>
+                </div>
+            </div>    
+        </main>
+    </div>
+    <script src="../dev.js"></script>
+
+
+</body>
+</html>

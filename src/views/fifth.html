@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/dist/tailwind.css"> -->
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+    <div class="page-wrapper-light flex flex-col justify-between h-screen w-screen overflow-auto">
+        <header class="z-20 relative">
+            <div class="bg-white h-16 flex justify-between items-center py-1.5 pr-5 pl-4 shadow-md">
+                <div class="w-36 h-auto">
+                    <img src="/dist/img/Advectus-Logo500.png" alt="Advectus" class="w-full h-full object-cover">
+                </div>
+                <div class="h-11 w-11 rounded-full bg-gray-200 flex justify-center items-center">
+                    <p class="font-normal text-sm uppercase">md</p>
+                </div>
+            </div>
+        </header>
+        <main class="h-full w-full flex flex-col">
+            <div class="content-wrapper bg-gray-100 bg-opacity-10 relative flex flex-col h-full pt-3">
+                <div class="flex flex-col h-full">
+                    <p class="text-sm-dark mb-7 px-5">select storage</p>
+                    <!-- component-> compound -->
+                    <div class="compound-wrap flex pb-5 border-solid border-b">
+                        <div class="compound-image flex justify-center items-center mr-2.5 relative">
+
+                            <img src="/dist/img/location-vector.svg" alt="location icon">
+                        </div>
+                        <div class="compound-textbox">
+                            <p class="text-md-dark">Main Compound</p>
+                            <p class="text-md-light">UK main, close to Sheerness</p>
+                        </div>
+                    </div>
+
+                        <div class="storage-units w-full grid grid-cols-3 landscape:grid-cols-5 gap-x-4 gap-5 p-5 iphone5:gap-4">
+                            <div class="storage-number flex shadow">
+                                <p class="storage-number-text">1-10</p>
+                            </div>
+                            <div class="storage-number flex shadow">
+                                <p class="storage-number-text">11-20</p>
+                            </div>
+                            <div class="storage-number flex shadow">
+                                <p class="storage-number-text">21-30</p>
+                            </div>
+                            <div class="storage-number flex shadow">
+                                <p class="storage-number-text">31-40</p>
+                            </div>
+                            <div class="storage-number flex shadow">
+                                <p class="storage-number-text">41-50</p>
+                            </div>
+                            <div class="storage-number flex shadow">
+                                <p class="storage-number-text">51-60</p>
+                            </div>
+                            <div class="storage-number flex shadow">
+                                <p class="storage-number-text">61-70</p>
+                            </div>
+                            <div class="storage-number flex shadow">
+                                <p class="storage-number-text">71-80</p>
+                            </div>
+                            <div class="storage-number flex shadow">
+                                <p class="storage-number-text">81-90</p>
+                            </div>
+                            <div class="storage-number flex shadow">
+                                <p class="storage-number-text">91-100</p>
+                            </div>
+                            <div class="storage-number flex shadow">
+                                <p class="storage-number-text">101-110</p>
+                            </div>
+                            <div class="storage-number flex shadow">
+                                <p class="storage-number-text">111-120</p>
+                            </div>
+                           
+                        </div>
+
+                    
+<!-- scan and park component -->
+                  <!-- scan and park component -->
+                  <div class="scan-and-park mt-auto flex justify-between">
+                    <button class="return-button flex flex-shrink-0 justify-center items-center">
+                        <img src="/dist/img/return-button.svg" alt="return">
+                    </button>
+                    <form action="" class="flex w-full h-full">
+                        <input type="text" class="input border rounded-r-none flex-grow-2 flex-shrink" placeholder="A">
+                        <button class="btn input-btn flex-grow">Park</button>
+                    </form>
+                </div>
+                </div>
+            </div>    
+        </main>
+    </div>
+    <script src="../dev.js"></script>
+
+</body>
+</html>
